@@ -7,13 +7,16 @@ public class NodeQueGenericTest {
         NodeQueGeneric<String> queue = new NodeQueGeneric<String>();
         queue.enqueue("Waseem");
         queue.enqueue("Seemo");
-        queue.enqueue("Zinab");
+        queue.enqueue("Zainab");
         queue.enqueue("Majid");
+
         System.out.println(queue.size());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
+        queue.walkQue();
+
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+       queue.dequeue();
+        queue.walkQue();
         System.out.println(queue.size());
-    }
-}
+    }}
