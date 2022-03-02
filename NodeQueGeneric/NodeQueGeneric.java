@@ -43,12 +43,23 @@ public class NodeQueGeneric<E> implements Que<E> {
 
     }
 
+    public void walkQue(){
+        GenericNode x = first;
+        while (x != null){
+            System.out.println(x.getItem());
+            x = x.getNext();
+        }    }
+
+
+
+
     @Override
     public int size(){
         return n;
     }
 
+
+
+
+
 }
-
-
-
